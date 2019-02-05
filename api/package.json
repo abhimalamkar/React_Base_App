@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node -- src/index.js",
+    "deploy": "pm2 start npm -- start"
+  },
+  "author": "Abhijeet Malamkar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.7",
+    "prettier": "^1.15.2"
+  }
+}
