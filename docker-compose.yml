@@ -10,13 +10,13 @@ services:
     depends_on:
       - mongo
     volumes:
-      - api/:/usr/src/app
+      - ./api/:/usr/src/app
 
   mongo:
     container_name: mongo
     image: mongo
     volumes:
-      - api/data:/data/db
+      - ./api/data:/data/db
     ports:
       - "27017:27017"
   
@@ -29,5 +29,5 @@ services:
     depends_on:
       - server
     volumes:
-      - .:/usr/src/app
+      - ./app:/usr/src/app
   
